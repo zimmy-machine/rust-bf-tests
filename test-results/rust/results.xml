@@ -1,0 +1,3 @@
+<testsuites>
+<testsuite id="0" name="cargo test #0" package="testsuite/cargo test #0" tests="5" errors="0" failures="5" hostname="localhost" timestamp="2020-12-29 01:13:17.080637" time="0"><testcase name="compiler/err.bf" classname="tests" time="0"><failure type="cargo test" message=""/></testcase><testcase name="compiler/t0.bf" classname="tests" time="0"><failure type="cargo test" message=""/></testcase><testcase name="compiler/t1.bf" classname="tests" time="0"><failure type="cargo test" message=""/></testcase><testcase name="compiler/t2.bf" classname="tests" time="0"><failure type="cargo test" message=""/></testcase><testcase name="compiler/t3.bf" classname="tests" time="0"><failure type="cargo test" message=""/></testcase></testsuite>
+</testsuites>

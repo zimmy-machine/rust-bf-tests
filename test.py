@@ -1,7 +1,7 @@
 import os
 import datetime
 
-test_dir = "tests/compiler/"
+test_dir = "tests/"
 test_names = os.popen("find "  + test_dir  + "*.bf | sed 's/\.[^.]*$//'").read().split('\n')[:-1]
 
 bf_names = [test + ".bf" for test in test_names]

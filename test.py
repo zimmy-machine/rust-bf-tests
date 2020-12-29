@@ -12,8 +12,9 @@ test_case_xml = []
 
 num_failed = 0
 for i in range(len(bf_names)):
-    output = os.popen("(test -f " + in_names[i] + " || timeout 5 cargo run --manifest-path ~/project/rust/Cargo.toml" + bf_names[i] + " 1) && \
-                        timeout 5 cargo run --manifest-path ~/project/rust/Cargo.toml" + bf_names[i] + " 1 < " + in_names[i]).read().rstrip()
+    output = os.popen("(test -f " + in_names[i] + " || timeout 5 cargo run --manifest-path ../rust/Cargo.toml" + bf_names[i] + " 1) && \
+                        timeout 5 cargo run --manifest-path ../rust/Cargo.toml" + bf_names[i] + " 1 < " + in_names[i]).read().rstrip()
+    print(output)
     answer = open(ok_names[i], 'r').read().rstrip()
     
     if output == answer:

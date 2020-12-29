@@ -36,10 +36,10 @@ for tc in test_case_xml:
     xml_output += tc
 xml_output += footer
 
-if not os.path.exists('../project/test-results'):
-    os.mkdir("../project/test-results")
-if not os.path.exists('../project/test-results/rust'):
-    os.mkdir("../project/test-results/rust")
+if not os.path.exists('test-results'):
+    os.mkdir("test-results")
+if not os.path.exists('test-results/rust'):
+    os.mkdir("test-results/rust")
 
 print(xml_output)
 
